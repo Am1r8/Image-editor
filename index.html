@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" integrity="sha384-3fdgwJw17Bi87e1QQ4fsLn4rUFqWw//KU0g8TvV6quvahISRewev6/EocKNuJmEw" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Image editor</title>
+</head>
+<body id="none">
+	<div class="container-fluid">
+
+
+		
+	<div class="row">
+		<div class="col-md-12 text-center mb-3 mt-3">
+	    	<form id="imgurl">
+                <input type="text" placeholder="Image url" id="onlineurl" class="onlineurl">
+                <button type="submit">Change Image</button>
+        </form>
+	    </div>
+	</div>
+	
+
+
+	<div class="row">
+		<div class="col-md-4">
+		</div>
+		<div class="col-md-4 text-center">
+            <img class="m-2" src="https://static01.nyt.com/images/2018/07/26/science/26TB-MARS-promo/26TB-MARS-promo-superJumbo.jpg" id="targetimage" alt="">
+		</div>
+		<div class="col-md-4">
+		</div>
+	</div>
+
+
+
+		<div class="row">
+			<div class="col-md-4">
+			</div>
+			<div class="col-md-4 p-2 text-center" id="section_three">
+				<h3>Image Filters</h3>
+	    		    <form id="slider-form">
+					    <p>
+					      <label for="gs" class="fa fa-adjust"></label>
+					      <input id="gs" name="gs" type="range" min="" max="100" value="0" class="slider">
+					    </p>
+					                        
+					    <p>
+					      <label for="blur" class="fa fa-assistive-listening-systems"></label>
+					      <input id="blur" name="blur" type="range" min="0" max="" value="0" class="slider">
+					    </p>
+
+					    <p>
+					      <label for="hue-rotate" class="fa fa-circle-o-notch fa-spin"></label>
+					      <input id="hue-rotate" name="hue-rotate" type="range" min="0" max="" value="0" class="slider">
+					    </p>
+
+					    <p>
+					      <label for="sepia" class="fa fa-balance-scale"></label>
+					      <input id="sepia" name="sepia" type="range" min="0" max="" value="0" class="slider">
+					    </p>
+
+					    <p>
+					      <label for="invert" class="fa fa-reply"></label>
+					      <input id="invert" name="invert" type="range" min="0" max="" value="0" class="slider">
+					    </p>
+                
+					    <button type="reset">Reset</button>
+					</form>
+			</div>
+			<div class="col-md-4">
+			</div>
+		</div>
+	</div>
+    <script src="script.js"></script>
+</body>
+</html>

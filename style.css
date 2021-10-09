@@ -1,0 +1,57 @@
+body{
+  background: linear-gradient(-45deg, #B0A1BA, #A5B5BF, #ABC8C7, #B8E2C8, #BFF0D4 );
+  background-size: 400% 400%;
+  -webkit-animation: gradientBG 10s ease infinite;
+  animation: gradientBG 10s ease infinite;
+}
+
+#onlineurl{
+  border:0px;
+  border-radius: 50px;
+  outline: none;
+  text-align: center;
+}
+
+::placeholder{
+  color:black;
+  text-align: center;
+}
+  
+h3{
+  color:#495157 !important;
+}
+
+img{
+  width: 500px;
+  border-radius: 15px;
+}
+
+#section_three{
+  border:0px;
+}
+
+
+
+
+@-webkit-keyframes gradientBG {
+  0% {
+  background-position: 0% 50%;
+  }
+  50% {
+  background-position: 100% 50%;
+  }
+  100% {
+  background-position: 0% 50%;
+  }
+  }
+  @keyframes gradientBG {
+  0% {
+  background-position: 0% 50%;
+  }
+  50% {
+  background-position: 100% 50%;
+  }
+  100% {
+  background-position: 0% 50%;
+  }
+  }
